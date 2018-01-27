@@ -49,6 +49,9 @@ namespace TechJobsConsole
             {
                 string aValue = row[column];
 
+               aValue = aValue.ToLower();
+                value = value.ToLower();
+
                 if (aValue.Contains(value))
                 {
                     jobs.Add(row);
